@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+function speak() {
+  var msg = new SpeechSynthesisUtterance();
+  var text = document.getElementById("text").value;
+  msg.text = text;
+  window.speechSynthesis.speak(msg);
+}
+</script>
+</head>
+</html>
